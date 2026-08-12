@@ -7,14 +7,14 @@ export function capitalise(string) {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 }
-
+ 
 //truncate
 export function truncate(string, length) {
   if (string.length <= length) return string;
   {
     return string.slice(0, length) + "...";
   }
-
+}
   //camel case
   export function camelCase(string) {
     return string
@@ -32,7 +32,7 @@ export function truncate(string, length) {
   export function reverse(string) {
     return string.split("").reverse().join("");
   }
-}
+
 
 //isPalindrome
 export function isPalindrome(string) {
