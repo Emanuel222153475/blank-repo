@@ -17,7 +17,7 @@ values found in both arrays.
 */
 
 // Returns the total of all numbers in an array.
-function sum(numbers) {
+export function sum(numbers) {
     let sum = 0;
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
@@ -26,19 +26,19 @@ function sum(numbers) {
 }
 
 // Returns the average of the numbers in an array. Return 0 if the array is empty.
-function average(numbers) {
+export function average(numbers) {
     return sum(numbers) /numbers.length;
 }
 
 // Returns a new array with duplicate values removed while preserving the original order.
-function unique(array) {
+export function unique(array) {
     const output = [...a1];
 
     return output;
 }
 
 // Divides an array into smaller arrays containing no more than the specified number of elements.
-function chunk(array, size) {
+export function chunk(array, size) {
     const output = [];
     for (let i = 0; i < array.length; i += size) {
         output.push(array.slice(i, i + size));
@@ -47,7 +47,7 @@ function chunk(array, size) {
 }
 
 // Returns a new array containing the unique values found in both arrays.
-function intersection(firstArray, secondArray) {
+export function intersection(firstArray, secondArray) {
 
 }
 
